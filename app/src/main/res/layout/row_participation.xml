@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:id="@+id/row_participation"
+    >
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:maxWidth="125dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="#NNNNNN"
+        />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/numero"
+        android:layout_alignTop="@+id/numero"
+        android:textStyle="bold"
+        tools:text="Nom"
+        />
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nom"
+        android:layout_alignTop="@+id/nom"
+        android:textStyle="bold"
+        tools:text="Prénom"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/nom"
+        android:layout_below="@+id/nom"
+        tools:text="01-01-01"
+        />
+    <TextView
+        android:id="@+id/boisson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/date"
+        android:layout_below="@+id/prenom"
+        tools:text="Boisson"
+        />
+
+</RelativeLayout>

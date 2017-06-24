@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/mainactivity_layout"
+    tools:context="com.example.rachid.smscatcher.views.ParticipationActivity">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:id="@+id/info"
+        android:text="@string/msg_info" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/requestPerm"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/info"
+        android:id="@+id/btnRequestPerm"
+        android:visibility="gone"
+        android:onClick="requestPermission"/>
+        <ListView
+            android:id="@+id/listView"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/btnRequestPerm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+</RelativeLayout>
